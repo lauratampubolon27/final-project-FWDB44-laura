@@ -21,12 +21,12 @@
     <!-- Icon -->
     <link rel="icon" href="images/logo-laura.jpg">
 </head>
-<body onload="myFunction()" style="margin:0;">
+<body onload="myFunction()">
   <div id="loader"></div>
-    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <div id="myDiv" class="animate-bottom">
       <div class="container-fluid p-0">
         <!-- header -->
-        <div class="header">
+        <div id="header">
           <img class="logo" src="images/logo-laura.jpg"/>
           <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="index.html">Miss Laura May</a>
@@ -53,102 +53,99 @@
                   </div>
                 </li>
               </ul>
-              <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form> -->
             </div>
           </nav>
-        </div>
           <!-- sub menu -->
-          <section id="sub-menu">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">About Me</li>
-              </ol>
-            </nav>
-          </section>
-          <section id="tentang">
-            <div class="row">
-              <div class="col-12">
-                <h1 class="entry-title td-page-title">
-                  <span>About Me and This Website</span>
-                </h1>
-              </div>
+          <nav aria-label="breadcrumb" id="sub-menu">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">About Me</li>
+            </ol>
+          </nav>
+        </div>
+        <!-- About me and website -->
+        <section id="tentang">
+          <div class="row">
+            <div class="col-sm-12 about">
+              <h1 class="entry-title td-page-title">
+                <span>About Me and This Website</span>
+              </h1>
             </div>
-            <div class="row" id="fill">
-              <div class="col-12">
-                <div class="row" id="tentang-saya">
-                  <div class="col-6">
-                    <img src="images/IMG-20190219-WA0037.jpg" class="profile-picture"/>
-                  </div>
-                  <div class="col-6 about-me">
-                    <span class="sub-title">About Me</span></br>
-                    <p class="describe"><strong>Laura</strong> is a unique person with passion in books, journaling, and singing.
-                        She is usually called <strong>Ra</strong> or <strong>Lala</strong>. She has fallen in love with journaling since Elementary School 
-                        by telling her personal stories in a secret diary, or submitting her poems to a blog.
-                        She likes coffee and listening music because it will calm her heart.
-                        When she want to release her mind, she will read a book while listening to music
-                        and accompanied by a cup of coffee.</p>
-                  </div>
+          </div>
+          <div class="row" id="fill">
+            <div class="col-sm-12">
+              <div class="row" id="tentang-saya">
+                <div class="col-md-6">
+                  <img src="images/IMG-20190219-WA0037.jpg" class="profile-picture"/>
                 </div>
-                <div class="row" id="tentang-website">
-                  <div class="col-6">
-                    <img src="images/IMG_20190129_134739.jpg" class="webabout-picture"/>
-                  </div>
-                  <div class="col-6 about-website">
-                    <span class="sub-title">About This Website</span></br>
-                    <p class="describe">A website that created because of Laura's love of books and
-                        photograph that fills her life. She wants to share things like books and photographs 
-                        that make her happy to the whole world. She hope everyone also feel her happiness.
-                        Please enjoy the website!</p>
-                  </div>
+                <div class="col-md-6 about-me">
+                  <span class="sub-title">About Me</span></br>
+                  <p class="describe"><strong>Laura</strong> is a unique person with passion in books, journaling, and singing.
+                    She is usually called <strong>Ra</strong> or <strong>Lala</strong>. She has fallen in love with journaling since Elementary School 
+                    by telling her personal stories in a secret diary, or submitting her poems to a blog.
+                    She likes coffee and listening music because it will calm her heart.
+                    When she want to release her mind, she will read a book while listening to music
+                    and accompanied by a cup of coffee.</p>
                 </div>
               </div>
-            </div>
-          </section>
-          <section id="contact">
-            <div class="row">
-              <div class="col-12">
-                <h1 class="entry-title td-page-title">
-                  <span>Contact Me</span>
-                </h1>
+              <div class="row" id="tentang-website">
+                <div class="col-md-6">
+                  <img src="images/IMG_20190129_134739.jpg" class="webabout-picture"/>
+                </div>
+                <div class="col-md-6 about-website">
+                  <span class="sub-title">About This Website</span></br>
+                  <p class="describe">A website that created because of Laura's love of books and
+                    photograph that fills her life. She wants to share things like books and photographs 
+                    that make her happy to the whole world. She hope everyone also feel her happiness.
+                    Please enjoy the website!</p>
+                </div>
               </div>
             </div>
-            <div class="row" id="form-contact">
-              <div class="col-12">
-                <p class="describe">If you’re interested in working together with me,
-                    simply leave your messages below.</p>
-                <form action="https://formspree.io/maypekrz" method="POST">
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="inputNama">Name (required)</label>
-                      <input type="text" class="form-control" id="inputName" placeholder="Name" name="name">
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="inputEmail">Email (required)</label>
-                      <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="inputSubject">Subject</label>
-                      <input type="subject" class="form-control" id="inputSubject" placeholder="" name="subject">
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputMessage">Your Message</label>
-                        <textarea type="textarea" class="form-control" id="inputMessage" placeholder="" name="message" rows="5"></textarea>
-                      </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Send</button>
-              </div>
+          </div>
+        </section>
+        <!-- Contact -->
+        <section id="contact">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="entry-title td-page-title">
+                <span>Contact Me</span>
+              </h1>
             </div>
-          </section>
+          </div>
+          <div class="row" id="form-contact">
+            <div class="col-12">
+              <p class="describe">If you’re interested in working together with me,
+                simply leave your messages below.</p>
+              <form action="https://formspree.io/maypekrz" method="POST">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputNama">Name (required)</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="" name="name">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail">Email (required)</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="" name="email">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputSubject">Subject</label>
+                    <input type="subject" class="form-control" id="inputSubject" placeholder="" name="subject">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputMessage">Your Message</label>
+                    <textarea type="textarea" class="form-control" id="inputMessage" placeholder="" name="message" rows="5"></textarea>
+                  </div>
+                </div> 
+                <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+            </div>
+          </div>
+        </section>
         <!-- footer -->
         <footer>
           <div class="row" id="footer">

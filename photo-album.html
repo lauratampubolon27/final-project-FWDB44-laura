@@ -19,57 +19,50 @@
     <!-- Icon -->
     <link rel="icon" href="images/logo-laura.jpg">
 </head>
-<body onload="myFunction()" style="margin:0;">
+<body onload="myFunction()">
   <div id="loader"></div>
   <div style="display:none;" id="myDiv" class="animate-bottom">
     <div class="container-fluid p-0">
       <!-- header -->
-      <div class="header">
+      <div id="header">
         <img class="logo" src="images/logo-laura.jpg"/>
         <nav class="navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="index.html">Miss Laura May</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-        <!-- Menu -->
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tentang-saya.html">About Me<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Collections
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="books.html">Books</a>
-                <a class="dropdown-item" href="photo-album.html">Photo Album</a>
-                <!-- <div class="dropdown-divider"></div> -->
-              </div>
-            </li>
-          </ul>
-          <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
-        </div>
+          <!-- Menu -->
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tentang-saya.html">About Me<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Collections
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="books.html">Books</a>
+                  <a class="dropdown-item" href="photo-album.html">Photo Album</a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </nav>
-      </div>
-      <!-- sub menu -->
-      <section id="sub-menu">
-        <nav aria-label="breadcrumb">
+        <!-- sub menu -->
+        <nav aria-label="breadcrumb" id="sub-menu">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Collections > Photo Album</li>
           </ol>
         </nav>
-      </section>
+      </div>
       <section id="photos">
         <div class="row">
-          <div class="col-4" style="padding-left: 60px">
+          <div class="col-4 left-part">
             <div class="card mb-4">
               <img class="card-img" src="images/DSC01262.jpg" alt="">
               <div class="card-body">
@@ -103,7 +96,7 @@
               </div>
             </div>    
           </div>
-          <div class="col-4" style="padding-left: 30px; padding-right: 30px">
+          <div class="col-4 middle-part">
             <div class="card mb-4">
               <img class="card-img" src="images/Bali3.jpg" alt="">
               <div class="card-body">
@@ -136,7 +129,7 @@
               </div>
             </div>  
           </div> 
-          <div class="col-4" style="padding-right: 60px">
+          <div class="col-4 right-part">
             <div class="card mb-4">
               <img class="card-img" src="images/_MG_6008.JPG" alt="">
               <div class="card-body">
